@@ -10,12 +10,12 @@ public class GoogleCalendarApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GoogleCalendarApplication.class, args);
-		// CalendarService calendarService = new CalendarService();
-		// try {
-		// 	calendarService.calendarTest();
-		// } catch (IOException | GeneralSecurityException e) {
-		// 	System.out.println(e.getMessage());
-		// }
+		CalendarService calendarService = new CalendarService();
+		try {
+			calendarService.calendarTest();
+		} catch (IOException | GeneralSecurityException e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 }
